@@ -23,6 +23,7 @@ class UsersController < ApplicationController
       redirect_to @user
     else
       flash.now[:danger] = 'ユーザの登録に失敗しました。'
+      render :new
     end
   end
   
